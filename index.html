@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Gerenciador de Tarefas</title>
+</head>
+<body>
+    <main>
+        <h1>Board de tarefas</h1>
+        <section id="create-task-section">
+            <form id="create-task-form">
+                <input 
+                type="text"
+                id="nomeDaTarefa"
+                placeholder="Nome da tarefa"
+                class="input-form"
+                />
+                <input 
+                type="text"
+                id="etiqueta"
+                aria-label="Etiqueta"
+                placeholder="Etiqueta"
+                class="input-form"
+                />
+                <button id="save-task" class="add-task-button">+</button>
+            </form>
+        </section>   
+        <section class="task-list">
+            <ul id="item-list"></ul>
+        </section> 
+        <footer id="footer-section">
+            <span id="completed-count">0 tarefa(s) concluída(s)</span>
+            <button id="remove-completed" class="remove-completed-button">Remover Concluídas</button>
+        </footer>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
